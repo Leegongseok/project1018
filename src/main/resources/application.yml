@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/xe  # 실제 데이터베이스 URL로 변경
+    username: your_username                      # 실제 Oracle 사용자명
+    password: your_password                      # 실제 비밀번호
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.Oracle19cDialect
